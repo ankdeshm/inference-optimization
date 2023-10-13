@@ -6,7 +6,7 @@ Inference optimization is crucial for enhancing the efficiency and speed of deep
 ## Dataset: <br> 
 CIFAR10 Here are some key details about the CIFAR-10 dataset: - Number of images: 60,000 - Number of classes: 10 - Number of images per class: 6,000 - Image size: 32x32 pixels - Color channels: 3 (RGB) - Training set: 50,000 images (5,000 per class) - Test set: 10,000 images (1,000 per class)
 
-### Approach 1 - PyTorch vs TorchScript Inference: <br>
+#### Approach 1 - PyTorch vs TorchScript Inference: <br>
 1. Build a simple convolutional neural network using PyTorch [1] <br>
 2. Find accuracy on the test dataset = 63.14% <br>
 3. Create a serialized and optimized TorchScript representation of a PyTorch model. <br>
@@ -24,10 +24,10 @@ CIFAR10 Here are some key details about the CIFAR-10 dataset: - Number of images
 15. TorchScript Model Size: 12.29 MB <br>
 16. The model size for this particular model is almost equal in PyTorch and TorchScript. <br>
 
-## Conclusion: <br>
+#### Conclusion: <br>
 I compared various parameters for inference optimization using PyTorch & TorchScript and observed that while the accuracy and the model size remained almost constant, TorchScript performed significantly better in terms of inference time and latency. <br>
 
-## Approach 2 - PyTorch Quantization <br>
+#### Approach 2 - PyTorch Quantization <br>
 1. Build a simple convolutional neural network using PyTorch [2]. <br>
 2. Apply dynamic quantization to the PyTorch model. <br>
 3. Check model size for the models with and without quantization. <br>
@@ -39,7 +39,7 @@ I compared various parameters for inference optimization using PyTorch & TorchSc
 9. Hence the quantized model is faster. <br>
 
 
-## Conclusion: <br>
+#### Conclusion: <br>
 I compared various parameters for inference optimization using PyTorch & its quantized version by applying dynamic quantization and observed that the quantized model outperformed the non-quantized version of the model in terms of inference time and latency. <br>
 
 
