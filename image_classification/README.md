@@ -44,7 +44,6 @@ I compared various parameters for inference optimization using PyTorch & its qua
 
 
 ## References: <br>
-1)CNN in PyTorch for image classification:
-https://medium.com/thecyphy/train-cnn-model-with-pytorch-21dafb918f48 <br>
+1) CNN in PyTorch for image classification: https://medium.com/thecyphy/train-cnn-model-with-pytorch-21dafb918f48 <br>
 2) PyTorch Quantization Code Reference: https://gist.github.com/LilitYolyan/96ea2c9eaad511d3b0ffa87eff805e09#file-net-py <br>
 3) PyTorch documentation: https://pytorch.org/docs/stable/nn.html <br>
