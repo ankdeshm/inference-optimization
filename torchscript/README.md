@@ -1,6 +1,6 @@
 # TorchScript Inference <br>
 
-## Inference via TorchScript <br>: 
+## Inference via TorchScript: 
 
 ### Introduction: <br>
 With TorchScript, PyTorch aims to create a unified framework from research to production. TorchScript takes our PyTorch modules as input and convert them into a production-friendly format. It will run the models faster and independent of the Python runtime. To focus on the production use case, PyTorch uses 'Script mode' which has 2 components PyTorch JIT and TorchScript. <br>
