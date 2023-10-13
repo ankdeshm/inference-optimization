@@ -1,4 +1,4 @@
-# TorchScript Inference <br>
+# TorchScript Inference Example <br>
 
 ## Inference via TorchScript: 
 
