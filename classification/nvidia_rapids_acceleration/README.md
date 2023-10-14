@@ -16,6 +16,8 @@ NVIDIA’s RAPIDS offers an efficient way to enhance the speed of ML procedures 
 • Install RAPIDS most recent stable version. This process takes about 15-10 minutes. Also it’s important to note that. When working on colab, you’ll have to install RAPIDS and the necessary libraries every time you run the GPU. This is one of the disadvantages of using Colab over Kaggle. <br>
 • Once the installation is done, we can use cuML, CuDF and XGBoost to accelerate the respective functionalities.<br>
 
+## Step-by-step tutorial: <br>
+
 ### Pandas vs RAPIDS CuDF for data processing
 Part 1 (Before Acceleration): <br>
 • Import necessary modules like time, pandas, etc <br>
