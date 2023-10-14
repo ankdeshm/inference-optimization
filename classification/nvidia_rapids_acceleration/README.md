@@ -15,3 +15,27 @@ NVIDIA’s RAPIDS offers an efficient way to enhance the speed of ML procedures 
 • Install CondaColab. This will restart the kernel one last time and the session will crash. <br>
 • Install RAPIDS most recent stable version. This process takes about 15-10 minutes. Also it’s important to note that. When working on colab, you’ll have to install RAPIDS and the necessary libraries every time you run the GPU. This is one of the disadvantages of using Colab over Kaggle. <br>
 • Once the installation is done, we can use cuML, CuDF and XGBoost to accelerate the respective functionalities.<br>
+
+### Pandas vs RAPIDS CuDF for data processing
+Part 1 (Before Acceleration): <br>
+• Import necessary modules like time, pandas, etc <br>
+• Start the timer <br>
+• Load the train_sample.csv file using pandas <br>
+• End the timer <br>
+• Store the elapsed time in a variable called CPU_Time <br>
+
+Part 2 (After Acceleration): <br>
+• Import necessary modules like time, CuDF, etc <br>
+• Start the timer <br>
+• Load the train_sample.csv file using CuDF <br>
+• End the timer <br>
+• Store the elapsed time in a variable called GPU_Time <br> 
+
+Part 3: <br>
+Compare CPU_Time and GPU_Time and visualize: <br>
+CPU Time: 0.21895456314086914 <br>
+GPU Time: 0.09745955467224121 <br>
+CPU Time/GPU Time: 2.246619778606813 <br>
+
+### Conclusion: 
+The time taken by accelerated CuDF is less than half of the time taken by pandas to process the same file. This is extremely useful especially while reading the big files in ML models. <br>
