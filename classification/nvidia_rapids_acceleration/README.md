@@ -75,3 +75,36 @@ CPU Time to GPU time ratio: 3.6269840127013016 <br>
 
 ### Conclusion: 
 The time taken by accelerated CuML is much lesser than the time taken by sklearn to build a KNN model and predict the classes for same dataset. <br>
+
+### XGBoost on CPU vs RAPIDS GPU-accelerated XGBoost for Regression model 
+Since this is a regression problem, I have used a different dataset here which is an in-built dataset from sklearn library about California Housing. So the following model is about Housing Price Prediction (Regression Model) using XGBoost. <br> 
+
+Part 1 (Build a model): <br>
+• Import xgboost, numpy and sklearn datasets <br>
+• Create input features and the output predictor <br>
+• Train the XGboost model <br>
+
+Part 2 (Before Acceleration): <br>
+• Enable CPU accelerated prediction <br>
+• Start the timer <br>
+• Predict on dataset which model has not seen before <br>
+• End the timer <br>
+• Store the elapsed time in a variable called CPU_Time <br>
+
+Part 3 (After Acceleration): <br>
+• Enable GPU accelerated prediction <br>
+• Start the timer <br>
+• Predict on dataset which model has not seen before <br>
+• End the timer
+• Store the elapsed time in a variable called GPU_Time <br>
+
+Part 3: <br>
+• Compare CPU_Time and GPU_Time and visualize <br>
+
+### Conclusion: <br>
+RAPIDS XGBoost clearly beats the CPU time in case of regression model also. As demonstrated in 3 different ways above, NVIDIA RAPIDS is a great way to accelerate classification/regression models on GPU. <br>
+
+## References: <br>
+1) Dataset: https://www.kaggle.com/datasets/srinivasav22/mnist-digit-recognition-using-knn <br>
+2) Environment Setup: https://colab.research.google.com/drive/1xnTpVS194BJ0pOPuxN4GOmypdu2RvwdH#scrollTo=GzdJ7SnJ4QDD <br>
+3) RAPIDS for ML: https://github.com/rapidsai/cuml <br>
