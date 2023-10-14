@@ -39,3 +39,37 @@ CPU Time/GPU Time: 2.246619778606813 <br>
 
 ### Conclusion: 
 The time taken by accelerated CuDF is less than half of the time taken by pandas to process the same file. This is extremely useful especially while reading the big files in ML models. <br>
+
+### Sklearn’s KNN vs RAPIDS CuML for Classification model using KNN 
+
+Part 1 (Before Acceleration): <br>
+• from sklearn.neighbors import KNeighborsClassifier <br>
+• Start the timer <br>
+• Load training data using pandas <br>
+• Create feature and target arrays for training data <br>
+• Load testing data using pandas <br>
+• Create feature and target arrays for testing data <br>
+• Fit a KNN model from Sklearn <br>
+• Predict on dataset which model has not seen before <br>
+• End the timer <br>
+• Store the elapsed time in a variable called CPU_Time <br>
+
+Part 2 (After Acceleration): <br>
+• Import cudf, from cuml.neighbors import KNeighborsClassifier <br>
+• Start the timer <br>
+• Load training data using pandas <br>
+• Create feature and target arrays for training data <br>
+• Load testing data using pandas <br>
+• Create feature and target arrays for testing data <br>
+• Fit a KNN model from CuML <br>
+• Predict on dataset which model has not seen before <br>
+• End the timer <br>
+• Store the elapsed time in a variable called GPU_Time <br>
+
+Part 3: • Compare CPU_Time and GPU_Time and visualize <br>
+Time taken on CPU = 2.1018526554107666 <br>
+Time taken on GPU = 0.5795042514801025 <br>
+CPU Time to GPU time ratio: 3.6269840127013016 <br>
+
+### Conclusion: 
+The time taken by accelerated CuML is much lesser than the time taken by sklearn to build a KNN model and predict the classes for same dataset. <br>
