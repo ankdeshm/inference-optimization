@@ -26,6 +26,14 @@ The overall training process took approximately 0.985 hours, and the validation 
 
 The parameters yielding best results were saved as our baseline/custom model for further inference. <br>
 
+Some sample labeled images: <br>
+
+![Image3](images/obj_det_1.png)
+
+![Image4](images/obj_det_2.png)
+
+![Image5](images/obj_det_3.png)
+
 #### Preparation for Inference: <br>
 - Load and convert an image to RGB format, then resize it to 128x128 pixels for model compatibility. <br>
 - Transform the resized image into a tensor and normalize it using predefined mean and standard deviation values. <br>
