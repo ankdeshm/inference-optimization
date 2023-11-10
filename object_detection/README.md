@@ -49,6 +49,14 @@ The parameters yielding best results were saved as our baseline/custom model for
 #### Conclusion: <br>
 I compared the model sizes and the inference times for all 3 models: baseline, TorchScript, and ONNX. In conclusion, the evaluative comparison of YOLOv8 baseline, TorchScript, and ONNX models illuminates distinct trade-offs between inference speed and storage size. The baseline YOLOv8 model requires the least storage at 49.58 MB but lags in inference performance, clocking in at 0.32 seconds. TorchScript moderately improves on this with a 0.28-second inference time, yet doubles the storage requirement. ONNX stands out by significantly enhancing inference speed to 0.07 seconds—a reduction of approximately 78% from the baseline and 75% from TorchScript—while maintaining a model size comparable to TorchScript. This performance profile underscores the importance of ONNX in applications where rapid inference is paramount, despite similar storage demands as TorchScript. Hence, ONNX emerges as the optimal choice for efficiency in computational performance without a considerable increase in model size.
 
+### Model Size Comparison <br>
+
+![Image1](images/model_size.png)
+
+### Inference Time Comparison <br>
+
+![Image2](images/inference_time.png)
+
 
 ## References: <br>
 1) Fashion Object Detection - YOLOv8: (https://www.kaggle.com/code/rohitgadhwar/fashion-object-detection-yolov8) <br>
